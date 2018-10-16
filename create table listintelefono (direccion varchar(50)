@@ -1,0 +1,8 @@
+create table listintelefono (direccion varchar(50) primary key, telefono integer[]);
+
+insert into listintelefono values ('calle uno','{1234541,8452,45621301,674525}');
+
+
+	insert into listintelefono values('calle dos','{7854158,548465,4561,5845}');
+
+select direccion,telefono[1] from listintelefono;

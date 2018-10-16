@@ -1,0 +1,16 @@
+create type envio AS(calle_envio varchar(200),Ciudad_envio varchar(20), codigo_postal smallint);
+
+create type cliente  as(Num_cliente int,Nombre_cliente varchar(200),calle varchar(20),ciudad varchar(20), codigoPostal varchar(20),tlf varchar(20));
+
+create table clientes OF cliente (Primary key(Num_cliente));
+
+create table pedido(Num_pedido int Primary key,DirecciónPedido envio);
+
+create table pedido(NUm_cliente int, Num_pedido int, pedido datopedido, foregin key(Num_cliente)references cliente(NUm_cliente));
+
+
+create table pedido(num_pedido int primary key,DatosEnvio datos_envio,num_cliente int references cliente);
+
+INSERT INTO CLIENTE VALUES(1,'pepe','almazora','puertorico','08009',6789122);
+
+INSERT INTO Pedido values(1,('Calle1','Barcelona',08020));

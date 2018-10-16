@@ -1,0 +1,3 @@
+create table clientes_vip (Descuento int,PuntosAcumulados int)INHERITS(CLIENTES);
+
+INSERT INTO CLIENTES_VIP(14,25,(2,'Manolo','almazora','puerto','08019',6789122))
